@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link href="css.css" rel="stylesheet" type="text/css" />
+	<title>Form 表单样式</title>
+</head>
+<body>
+	<h1>Form 表单样式</h1>
+	<form action="" class="form">
+		<p>
+			<label class="f_info">First Name</label>
+			<input type="text" placeholder="First Name" required class="f_long"></p>
+		<p>
+			<label class="f_info">Middle Name</label>
+			<input type="text" placeholder="Middle Name" class="f_long f_err"></p>
+		<p>
+			<label class="f_info">Last Name</label>
+			<input type="text" placeholder="Last Name" required class="f_long"></p>
+		<p>
+			<label class="f_info">Title</label>
+			<input type="radio" name="title" id="mr">
+			<label for="mr" class="f_for">Mr.</label>
+			<input type="radio" name="title" id="ms">
+			<label for="ms" class="f_for">Ms.</label>
+		</p>
+		<p>
+			<label class="f_info">Like</label>
+			<input type="checkbox" id="c1">
+			<label for="c1" class="f_for">Book</label>
+			<input type="checkbox" id="c2">
+			<label for="c2" class="f_for">Music</label>
+			<input type="checkbox" id="c3">
+			<label for="c3" class="f_for">Sport</label>
+		</p>
+		<p>
+			<label class="f_info">Password</label>
+			<input type="password" placeholder="Password" required class="f_long"></p>
+		<p>
+			<label class="f_info">Confirm Password</label>
+			<input type="password" placeholder="Confirm Password" required class="f_long"></p>
+		<p>
+			<label class="f_info">Email</label>
+			<input type="email" placeholder="Email" required class="f_long"></p>
+		<p>
+			<label class="f_info">Mobile</label>
+			<input type="text" placeholder="Mobile" required class="f_long"></p>
+		<p>
+			<label class="f_info">Date</label>
+			<input type="date" class="f_long"></p>
+		<p>
+			<label class="f_info">Age</label>
+			<input type="range" min="18" max="100"  class="f_long"></p>
+		<p>
+			<label class="f_info">Number</label>
+			<input type="number" class="f_short"><input type="number" class="f_short"></p>
+		<p>
+			<label class="f_info">Search</label>
+			<input type="search" x-webkit-speech class="f_long"></p>
+		<p>
+			<label class="f_info">Country/Region</label>
+			<select id="co-reg" required class="f_long">
+				<option value="USA" selected="selected">United States</option>
+				<option value="AFG">Afghanistan</option>
+				<option value="ALB">Albania</option>
+				<option value="DZA">Algeria</option>
+			</select></p>
+		<p><button type="submit" class="btn red">Submit</button><button type="reset" class="btn">Reset</button></p>
+	</form>
+</body>
+</html>
