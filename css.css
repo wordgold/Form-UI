@@ -94,26 +94,26 @@ input[type=search], input[type=date], input[type=number] {
 }
 select, input[type=email], input[type=search], input[type=date], input[type=number], input[type=password], input[type=text], input[type=url], textarea {
 	border: 1px #ccc solid;
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1),0 0 0 3px rgba(200, 200, 200, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(200, 200, 200, 0.1);
 	border-radius: 3px;
 	padding: 0 4px;
 }
 select:hover, input[type=email]:hover, input[type=search]:hover, input[type=date]:hover, input[type=number]:hover, input[type=password]:hover, input[type=text]:hover, input[type=url]:hover, textarea:hover {
 	border: 1px solid #999;
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2),0 0 0 3px rgba(200, 200, 200, 0.2);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(200, 200, 200, 0.2);
 }
 select:focus, input[type=email]:focus, input[type=search]:focus, input[type=date]:focus, input[type=number]:focus, input[type=password]:focus, input[type=text]:focus, input[type=url]:focus, textarea:focus {
 	outline: none;
 	border: 1px solid #4D90FE;
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4),0 0 0 3px rgba(200, 200, 200, 0.4);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(200, 200, 200, 0.4);
 }
 select {
 	padding: 0
 }
-input[type=radio], input[type=checkbox]{
+input[type=radio], input[type=checkbox] {
 	-webkit-transform: scale(1.2);
 }
-input {
+input, select, textarea {
 	height: 2em;
 	vertical-align: middle;
 	box-sizing: border-box;
@@ -210,6 +210,7 @@ a.lightbtn:active {
 	border: 1px #ddd solid;
 	border-radius: 3px;
 	padding: 24px;
+	background: #fff
 }
 .form p {
 	padding: 0 0 0 160px;
@@ -223,7 +224,7 @@ a.lightbtn:active {
 	font-size: 14px;
 	cursor: default;
 }
-.form input,.form select,.form .btn{
+.form input, .form select, .form .btn {
 	height: 32px;
 	line-height: 32px;
 	font-size: 14px;
@@ -231,22 +232,22 @@ a.lightbtn:active {
 .form .f_long {
 	width: 260px;
 }
-.form .f_short,.form .btn {
+.form .f_short, .form .btn {
 	width: 120px;
 	margin: 0 20px 0 0;
 }
-.form .f_for{
+.form .f_for {
 	display: inline-block;
 	vertical-align: middle;
 	min-width: 64px;
 	margin: 0 16px 0 0;
 }
-.form .f_err{
+.form .f_err {
 	border: 1px #f60 solid;
 }
-.form .f_suc{
+.form .f_suc {
 	border: 1px #01a461 solid;
 }
-.form .f_suc:after{
+.form .f_suc:after {
 	content: "√";
 }
